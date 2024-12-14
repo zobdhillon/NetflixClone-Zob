@@ -257,8 +257,8 @@ footer p {
 .btn-last p {
   color: rgb(173, 171, 171);
 }
-  
-@media screen and (max-width:1300px) {
+
+@media screen and (max-width: 1300px) {
   .grid {
     grid-template-columns: 1fr 1fr;
     gap: 25px;
@@ -271,43 +271,49 @@ footer p {
   }
 
   .first,
-.second,
-.third,
-.fourth {
-  flex-wrap: wrap;
-}
+  .second,
+  .third,
+  .fourth {
+    flex-wrap: wrap;
+  }
 
-.sec-img img {
-  max-width: 305px;
-}
+  .sec-img img {
+    max-width: 305px;
+  }
 
-.sec-img video {
-  max-width: 305px;
-}
+  .sec-img video {
+    max-width: 305px;
+  }
 
-.hero h1 {
-  font-size: 2rem;
-}
+  .hero h1 {
+    font-size: 2rem;
+  }
 
-.text h2, .faq h2 {
-  font-size: 1.5rem;
-}
- 
-.p-1, .text p, .faq-box, .faq-box i {
-  font-size: 1rem;
-}
+  .text h2,
+  .faq h2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
 
-.p-2, footer {
-  font-size: 0.8rem;
-}
+  .p-1,
+  .text p,
+  .faq-box,
+  .faq-box i {
+    font-size: 1rem;
+  }
 
-.separation {
-  height: 10px;
-  background-color: rgb(131, 129, 129);
-}
+  .p-2,
+  footer {
+    font-size: 0.8rem;
+  }
 
-.main input, .text h2 {
-  margin: 10px;
-}
-}
+  .separation {
+    height: 10px;
+    background-color: rgb(131, 129, 129);
+  }
 
+  .main input,
+  .text h2 {
+    margin: 5px 10px;
+  }
+}
