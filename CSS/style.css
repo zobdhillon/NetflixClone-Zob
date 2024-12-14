@@ -1,0 +1,145 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    height: 644px;
+    background-image: url(../Assets/Images/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: max(1200px, 100vw);
+    position: relative;
+}
+
+.main .main-cover {
+    height: 644px;
+    width: 100%;
+    background-color: black;
+    opacity: 0.69;
+    position: absolute;
+    top: 0;
+}
+
+nav {
+    max-width: 60vw;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+
+}
+
+nav .logo img {
+    width: 130px;
+    position: relative;
+    z-index: 10;
+}
+
+.btn {
+    position: relative;
+    z-index: 10; 
+    cursor: pointer;   
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 6px;
+    border-radius: 5px;
+}
+
+.btn-primary:hover {
+    background-color: white;
+    color: black;
+}
+
+.btn-sec {
+    color: white;
+    background-color: red;
+    border-radius: 5px;
+    padding: 7px;
+    border: none;
+}
+
+.btn-sec:hover {
+    background-color: rgb(182, 4, 4);
+}
+
+.hero {
+    height: calc(100% - 100px);
+    margin: auto;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: 23px;
+    font-family: 'Martel Sans', sans-serif;
+    padding: 0 30px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: -1.9px;
+    text-align: center;
+}
+
+.p-1 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.p-2 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.btn-big {
+    font-size: 20px;
+    font-weight: 400;
+    padding: 14px 40px;
+}
+
+.main input {
+    padding: 15px 16px;
+    color: white;
+    font-size: 1rem;
+    border-radius: 4px;
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 1px solid rgba(246, 238, 238, 0.5);
+    width : 350px
+}
+
+.input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+}
+
+@media screen and (max-width: 680px) {
+    .input {
+        flex-direction: column;
+    }
+    
+}
+
+.separation {
+    height: 7px;
+    background-color: rgb(73, 73, 73);
+}
