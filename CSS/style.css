@@ -44,8 +44,7 @@ nav .logo img {
 
 .btn {
     position: relative;
-    z-index: 10; 
-    cursor: pointer;   
+    z-index: 10;    
     font-weight: bold;
 }
 
@@ -55,6 +54,7 @@ nav .logo img {
     color: white;
     padding: 6px;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .btn-primary:hover {
@@ -68,6 +68,7 @@ nav .logo img {
     border-radius: 5px;
     padding: 7px;
     border: none;
+    cursor: pointer;
 }
 
 .btn-sec:hover {
@@ -93,19 +94,22 @@ nav .logo img {
     font-weight: 700;
     letter-spacing: -1.9px;
     text-align: center;
+    font-family: 'Poppins', sans-serif;
 }
 
 .p-1 {
     font-size: 1.2rem;
-    font-weight: 700;
+    font-weight: 600;
     text-align: center;
+    font-family: 'Poppins', sans-serif;
 }
 
 .p-2 {
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 500;
     margin-top: 20px;
     text-align: center;
+    font-family: 'Poppins', sans-serif;
 }
 
 .btn-big {
@@ -122,6 +126,11 @@ nav .logo img {
     background-color: rgba(23, 23, 23, 0.7);
     border: 1px solid rgba(246, 238, 238, 0.5);
     width : 350px
+}
+
+.main input::placeholder {
+    color: rgb(151, 150, 148);
+    font-weight: 600;
 }
 
 .input {
@@ -142,4 +151,37 @@ nav .logo img {
 .separation {
     height: 7px;
     background-color: rgb(73, 73, 73);
+}
+
+.first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    max-width: 80vw;
+    margin: auto;
+}
+
+.text h2{
+   font-size: 3.5rem;  
+}
+
+.text p {
+    font-size: 1.5rem;
+}
+
+.sec-img {
+    position: relative;
+}
+
+.sec-img img {
+    max-width: 40vw;
+    position: relative;
+    z-index: 10;
+}
+
+.sec-img video {
+    position: absolute;
+    top: 50px;
+    right: 0;
 }
