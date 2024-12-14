@@ -1,187 +1,305 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
-    background-color: black;
+  background-color: black;
 }
 
 .main {
-    height: 644px;
-    background-image: url(../Assets/Images/bg.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: max(1200px, 100vw);
-    position: relative;
+  height: 644px;
+  background-image: url(../Assets/Images/bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: max(1200px, 100vw);
+  position: relative;
 }
 
 .main .main-cover {
-    height: 644px;
-    width: 100%;
-    background-color: black;
-    opacity: 0.69;
-    position: absolute;
-    top: 0;
+  height: 644px;
+  width: 100%;
+  background-color: black;
+  opacity: 0.69;
+  position: absolute;
+  top: 0;
 }
 
 nav {
-    max-width: 60vw;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 100px;
-
+  max-width: 60vw;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
 }
 
 nav .logo img {
-    width: 130px;
-    position: relative;
-    z-index: 10;
+  width: 130px;
+  position: relative;
+  z-index: 10;
 }
 
 .btn {
-    position: relative;
-    z-index: 10;    
-    font-weight: bold;
+  position: relative;
+  z-index: 10;
+  font-weight: bold;
 }
 
 .btn-primary {
-    background-color: transparent;
-    border: 1px solid white;
-    color: white;
-    padding: 6px;
-    border-radius: 5px;
-    cursor: pointer;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 6px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .btn-primary:hover {
-    background-color: white;
-    color: black;
+  background-color: white;
+  color: black;
 }
 
 .btn-sec {
-    color: white;
-    background-color: red;
-    border-radius: 5px;
-    padding: 7px;
-    border: none;
-    cursor: pointer;
+  color: white;
+  background-color: red;
+  border-radius: 5px;
+  padding: 8px 14px;
+  border: none;
+  cursor: pointer;
+  margin-left: 5px;
 }
 
 .btn-sec:hover {
-    background-color: rgb(182, 4, 4);
+  background-color: rgb(182, 4, 4);
 }
 
 .hero {
-    height: calc(100% - 100px);
-    margin: auto;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    gap: 23px;
-    font-family: 'Martel Sans', sans-serif;
-    padding: 0 30px;
+  height: calc(100% - 100px);
+  margin: auto;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  gap: 23px;
+  font-family: "Martel Sans", sans-serif;
+  padding: 0 30px;
 }
 
 .hero h1 {
-    font-size: 3rem;
-    font-weight: 700;
-    letter-spacing: -1.9px;
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: -1.9px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
 }
 
 .p-1 {
-    font-size: 1.2rem;
-    font-weight: 600;
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
 }
 
 .p-2 {
-    font-size: 1rem;
-    font-weight: 500;
-    margin-top: 20px;
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 20px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
 }
 
 .btn-big {
-    font-size: 20px;
-    font-weight: 400;
-    padding: 14px 40px;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 14px 40px;
 }
 
 .main input {
-    padding: 15px 16px;
-    color: white;
-    font-size: 1rem;
-    border-radius: 4px;
-    background-color: rgba(23, 23, 23, 0.7);
-    border: 1px solid rgba(246, 238, 238, 0.5);
-    width : 350px
+  padding: 15px 16px;
+  color: white;
+  font-size: 1rem;
+  border-radius: 4px;
+  background-color: rgba(23, 23, 23, 0.7);
+  border: 1px solid rgba(246, 238, 238, 0.5);
+  width: 350px;
 }
 
 .main input::placeholder {
-    color: rgb(151, 150, 148);
-    font-weight: 600;
+  color: rgb(151, 150, 148);
+  font-weight: 600;
 }
 
 .input {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-    width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 100%;
 }
 
 @media screen and (max-width: 680px) {
-    .input {
-        flex-direction: column;
-    }
-    
+  .input {
+    flex-direction: column;
+  }
 }
 
 .separation {
-    height: 7px;
-    background-color: rgb(73, 73, 73);
+  height: 7px;
+  background-color: rgb(73, 73, 73);
 }
 
-.first {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    max-width: 80vw;
-    margin: auto;
+.first,
+.second,
+.third,
+.fourth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  max-width: 80vw;
+  margin: auto;
+  font-family: "Poppins", sans-serif;
 }
 
-.text h2{
-   font-size: 3.5rem;  
+.text {
+  padding: 34px 0px;
+}
+
+.text h2 {
+  font-size: 3rem;
 }
 
 .text p {
-    font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 
 .sec-img {
-    position: relative;
+  position: relative;
 }
 
 .sec-img img {
-    max-width: 40vw;
-    position: relative;
-    z-index: 10;
+  max-width: 555px;
+  position: relative;
+  z-index: 10;
 }
 
 .sec-img video {
-    position: absolute;
-    top: 50px;
-    right: 0;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  max-width: 555px;
 }
+
+.faq {
+  padding: 40px;
+}
+
+.faq h2 {
+  text-align: center;
+  color: white;
+  font-size: 3rem;
+  padding: 30px;
+}
+
+.faq-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #2d2d2d;
+  color: white;
+  font-size: 1.5rem;
+  max-width: 70vw;
+  margin: 15px auto;
+  cursor: pointer;
+  transition: background-color 1s;
+}
+
+.faq-box i {
+  font-size: 2rem;
+  font-weight: 200;
+}
+
+.faq-box:hover {
+  background-color: #414141;
+}
+
+footer {
+  max-width: 72vw;
+  margin: 35px auto;
+  font-size: 1rem;
+}
+
+footer a {
+  color: rgb(173, 171, 171);
+  cursor: pointer;
+}
+
+footer p {
+  margin: 20px 0px;
+}
+
+.grid ul li {
+  margin: 15px 0px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.btn-last {
+  margin: 20px 0px;
+}
+.btn-last p {
+  color: rgb(173, 171, 171);
+}
+  
+@media screen and (max-width:1300px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  nav {
+    max-width: 90vw;
+  }
+
+  .first,
+.second,
+.third,
+.fourth {
+  flex-wrap: wrap;
+}
+
+.sec-img img {
+  max-width: 305px;
+}
+
+.sec-img video {
+  max-width: 305px;
+}
+
+.hero h1 {
+  font-size: 2rem;
+}
+
+.text h2, .faq h2 {
+  font-size: 1.5rem;
+}
+ 
+.p-1, .text p, .faq-box, .faq-box i {
+  font-size: 1rem;
+}
+
+.p-2, footer {
+  font-size: 0.8rem;
+}
+
+}
+
