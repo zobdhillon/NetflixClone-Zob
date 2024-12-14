@@ -295,6 +295,10 @@ footer p {
     text-align: center;
   }
 
+  .text p {
+    text-align: center;
+  }
+
   .p-1,
   .text p,
   .faq-box,
@@ -314,6 +318,6 @@ footer p {
 
   .main input,
   .text h2 {
-    margin: 5px 10px;
+    margin: 10px 10px;
   }
 }
